@@ -9,6 +9,9 @@ import LawyerDetails from "../pages/Lawyers/LawyerDetails";
 
 import { Route, Routes } from "react-router-dom";
 
+import Dashboard from "../Dashboard/Lawyer-Account/Dashboard";
+import MyAccount from "../Dashboard/User-Account/MyAccount";
+
 const Router = () => {
   return (
     <>
@@ -21,6 +24,9 @@ const Router = () => {
         <Route path="/register" element={<Signup />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/lawyers/profile/me" element={<Dashboard />} />
+        <Route path="/users/profile/me" element={<MyAccount />} />
       </Routes>
     </>
   );
